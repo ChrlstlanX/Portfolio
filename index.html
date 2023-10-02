@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/skillset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="/portfolio/node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
 </head>
 
 <body>
@@ -49,18 +50,28 @@
             <h3>Portafolio</h3>
             <hr />
             <div>
-                <button>
+                <button data-modal-id="myModal">
                     <img src="assets/img/portfolio/localizador.png" />
                     <h4>GeoLocalizador</h4>
                 </button>
-                <button>
+                <div id="myModal" class="eins-modal">
+                    <div class="eins-modal-content">
+                      <div class="eins-modal-close"></div>
+                        <p><strong>previsualizador de mi proyecto Web</strong></p>
+                        <button class="eins-modal-close-button">Salir</button>
+                    </div>
+                </div>
+                <button data-modal-id="myModal2">
                     <img src="assets/img/portfolio/1.png" />
                     <h4>Proyecto 2</h4>
                 </button>
-                <button>
-                    <img src="assets/img/portfolio/1.png" />
-                    <h4>Proyecto 3</h4>
-                </button>
+                <div id="myModal2" class="eins-modal">
+                    <div class="eins-modal-content">
+                      <div class="eins-modal-close"></div>
+                        <p><strong>Previsualizador de mi proyecto Web</strong></p>
+                        <button class="eins-modal-close-button">Salir</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="skillset" class="even">
@@ -140,6 +151,7 @@
     </footer>
     <script src="/portfolio/assets/javascript/main.js"></script>
     <script src="/portfolio/assets/javascript/fixed.js"></script>
+    <script src="/portfolio/node_modules/eins-modal/dist/js/eins-modal-plain.min.js"></script>
 </body>
 
 </html>
