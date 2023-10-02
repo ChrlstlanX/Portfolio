@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "css-loader": "^6.8.1",
     "eins-modal": "^2.2.2",
+    "html-loader": "^4.2.0",
     "normalize.css": "^8.0.1"
   },
   "name": "portfolio",
@@ -8,6 +10,7 @@
   "description": "Mi portafolio",
   "main": "index.html",
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/cristinoX/portfolio/issues"
   },
-  "homepage": "https://github.com/cristinoX/portfolio#readme"
+  "homepage": "https://github.com/cristinoX/portfolio#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
 }
