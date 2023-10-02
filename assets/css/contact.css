@@ -4,7 +4,7 @@ form {
 
 form label {
     display: block;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@ form button {
     color: var(--white);
     margin: 3rem;
     border: none;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color .3s ease;
